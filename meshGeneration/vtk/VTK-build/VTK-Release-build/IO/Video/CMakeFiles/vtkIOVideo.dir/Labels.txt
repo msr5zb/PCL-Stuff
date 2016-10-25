@@ -1,0 +1,6 @@
+# Target labels
+ vtkIOVideo
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Video/vtkVideoSource.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Video/vtkVideoSource.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/Video/vtkIOVideoModule.h

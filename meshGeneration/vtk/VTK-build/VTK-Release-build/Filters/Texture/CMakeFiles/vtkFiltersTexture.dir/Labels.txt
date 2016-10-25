@@ -1,0 +1,18 @@
+# Target labels
+ vtkFiltersTexture
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToCylinder.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToPlane.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToSphere.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkImplicitTextureCoords.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkThresholdTextureCoords.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTransformTextureCoords.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTriangularTCoords.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToCylinder.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToPlane.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTextureMapToSphere.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkImplicitTextureCoords.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkThresholdTextureCoords.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTransformTextureCoords.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Texture/vtkTriangularTCoords.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Filters/Texture/vtkFiltersTextureModule.h

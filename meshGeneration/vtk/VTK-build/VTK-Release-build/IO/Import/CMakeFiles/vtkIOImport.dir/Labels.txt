@@ -1,0 +1,15 @@
+# Target labels
+ vtkIOImport
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtk3DSImporter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkImporter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkVRMLImporter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkOBJImporter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkOBJImporterInternals.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtk3DS.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtk3DSImporter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkImporter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkVRMLImporter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkOBJImporter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Import/vtkOBJImporterInternals.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/Import/vtkIOImportModule.h

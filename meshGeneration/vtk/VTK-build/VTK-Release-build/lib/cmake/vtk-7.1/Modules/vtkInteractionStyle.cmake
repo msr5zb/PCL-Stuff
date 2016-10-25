@@ -1,0 +1,10 @@
+set(vtkInteractionStyle_LOADED 1)
+set(vtkInteractionStyle_DEPENDS "vtkCommonCore;vtkCommonDataModel;vtkCommonMath;vtkCommonTransforms;vtkFiltersExtraction;vtkFiltersSources;vtkRenderingCore;vtkRenderingCore")
+set(vtkInteractionStyle_LIBRARIES "vtkInteractionStyle")
+set(vtkInteractionStyle_INCLUDE_DIRS "/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Interaction/Style;/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style")
+set(vtkInteractionStyle_LIBRARY_DIRS "")
+set(vtkInteractionStyle_RUNTIME_LIBRARY_DIRS "/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/lib")
+set(vtkInteractionStyle_WRAP_HIERARCHY_FILE "")
+set(vtkInteractionStyle_KIT "vtkInteraction")
+set(vtkInteractionStyle_IMPLEMENTS "vtkRenderingCore")
+

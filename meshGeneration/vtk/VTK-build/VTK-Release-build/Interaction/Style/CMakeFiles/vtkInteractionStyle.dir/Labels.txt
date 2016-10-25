@@ -1,0 +1,42 @@
+# Target labels
+ vtkInteractionStyle
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleDrawPolygon.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleFlight.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleImage.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleJoystickActor.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleJoystickCamera.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleMultiTouchCamera.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBand2D.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBand3D.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBandPick.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBandZoom.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTerrain.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackballActor.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackballCamera.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackball.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleUnicam.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleUser.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleSwitch.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkParallelCoordinatesInteractorStyle.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Interaction/Style/vtkInteractionStyleObjectFactory.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleDrawPolygon.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleFlight.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleImage.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleJoystickActor.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleJoystickCamera.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleMultiTouchCamera.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBand2D.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBand3D.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBandPick.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleRubberBandZoom.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTerrain.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackballActor.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackballCamera.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleTrackball.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleUnicam.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleUser.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkInteractorStyleSwitch.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Interaction/Style/vtkParallelCoordinatesInteractorStyle.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Interaction/Style/vtkInteractionStyleObjectFactory.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Interaction/Style/vtkInteractionStyleModule.h

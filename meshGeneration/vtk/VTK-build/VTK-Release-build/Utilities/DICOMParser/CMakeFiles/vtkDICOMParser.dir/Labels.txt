@@ -1,0 +1,6 @@
+# Target labels
+ vtkDICOMParser
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/DICOMParser/DICOMFile.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/DICOMParser/DICOMParser.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/DICOMParser/DICOMAppHelper.cxx

@@ -1,0 +1,8 @@
+# Target labels
+ vtkCommonColor
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Common/Color/vtkColorSeries.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Common/Color/vtkNamedColors.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Common/Color/vtkColorSeries.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Common/Color/vtkNamedColors.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Common/Color/vtkCommonColorModule.h

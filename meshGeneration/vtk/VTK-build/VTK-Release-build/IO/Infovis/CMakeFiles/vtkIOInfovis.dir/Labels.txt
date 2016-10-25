@@ -1,0 +1,36 @@
+# Target labels
+ vtkIOInfovis
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkBiomTableReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkChacoGraphReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDelimitedTextReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDIMACSGraphReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDIMACSGraphWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkFixedWidthTextReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkISIReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkMultiNewickTreeReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkNewickTreeReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkNewickTreeWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkPhyloXMLTreeReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkPhyloXMLTreeWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkRISReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkTulipReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkXGMLReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkXMLTreeReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkBiomTableReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkChacoGraphReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDelimitedTextReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDIMACSGraphReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkDIMACSGraphWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkFixedWidthTextReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkISIReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkMultiNewickTreeReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkNewickTreeReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkNewickTreeWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkPhyloXMLTreeReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkPhyloXMLTreeWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkRISReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkTulipReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkXGMLReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Infovis/vtkXMLTreeReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/Infovis/vtkIOInfovisModule.h

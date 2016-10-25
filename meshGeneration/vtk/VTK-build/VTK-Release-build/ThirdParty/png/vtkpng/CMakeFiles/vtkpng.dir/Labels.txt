@@ -1,0 +1,20 @@
+# Target labels
+ vtkpng
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngget.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngrio.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngwrite.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/png.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngmem.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngrtran.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngtrans.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngwtran.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngerror.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngpread.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngrutil.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngvcrd.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngwutil.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pnggccrd.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngread.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngset.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/png/vtkpng/pngwio.c

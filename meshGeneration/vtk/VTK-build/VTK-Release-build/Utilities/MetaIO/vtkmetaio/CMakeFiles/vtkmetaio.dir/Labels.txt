@@ -1,0 +1,36 @@
+# Target labels
+ vtkMetaIO
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaTypes.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaUtils.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaArrow.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaBlob.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaCommand.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaCommand.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaContour.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaContour.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaDTITube.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaEllipse.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaGroup.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaGaussian.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaImage.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaImageUtils.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaLandmark.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaLine.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaMesh.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaMesh.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaObject.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaOutput.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaOutput.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaScene.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaSurface.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaTube.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaVesselTube.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaTransform.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaTubeGraph.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaForm.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaForm.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaArray.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaArray.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaFEMObject.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/MetaIO/vtkmetaio/metaFEMObject.cxx

@@ -1,0 +1,4 @@
+# Target labels
+ vtkUtilitiesEncodeString
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/EncodeString/vtkEncodeString.cxx

@@ -1,0 +1,22 @@
+# Target labels
+ vtkIOAMR
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRDataSetCache.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRBaseParticlesReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRBaseReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoParticlesReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoReaderInternal.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashParticlesReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashReaderInternal.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRDataSetCache.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRBaseParticlesReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRBaseReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoParticlesReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMREnzoReaderInternal.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashParticlesReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/AMR/vtkAMRFlashReaderInternal.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/AMR/vtkIOAMRModule.h

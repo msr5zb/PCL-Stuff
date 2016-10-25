@@ -1,0 +1,23 @@
+# Target labels
+ vtkIOMINC
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageAttributes.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNIObjectReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNIObjectWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITagPointReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITagPointWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITransformReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITransformWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINC.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageAttributes.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMINCImageWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNIObjectReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNIObjectWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITagPointReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITagPointWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITransformReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/MINC/vtkMNITransformWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/MINC/vtkIOMINCModule.h

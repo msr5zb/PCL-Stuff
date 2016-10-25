@@ -1,0 +1,29 @@
+# Target labels
+ vtkfreetype
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftbase.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftbbox.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftbitmap.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftglyph.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftinit.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftmm.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/bdf/bdf.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/cache/ftcache.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/cff/cff.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/cid/type1cid.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/gzip/ftgzip.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/lzw/ftlzw.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/pcf/pcf.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/pfr/pfr.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/psaux/psaux.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/pshinter/pshinter.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/psnames/psmodule.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/raster/raster.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/sfnt/sfnt.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/smooth/smooth.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/truetype/truetype.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/type1/type1.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/type42/type42.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/winfonts/winfnt.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftdebug.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/freetype/vtkfreetype/builds/unix/ftsystem.c

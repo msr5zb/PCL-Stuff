@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOPLY
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLY.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLYReader.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLYWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLY.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLYReader.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/PLY/vtkPLYWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/PLY/vtkIOPLYModule.h

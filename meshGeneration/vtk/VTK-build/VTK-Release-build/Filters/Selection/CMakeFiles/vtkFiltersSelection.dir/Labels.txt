@@ -1,0 +1,10 @@
+# Target labels
+ vtkFiltersSelection
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkKdTreeSelector.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkLinearSelector.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkCellDistanceSelector.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkKdTreeSelector.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkLinearSelector.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Filters/Selection/vtkCellDistanceSelector.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Filters/Selection/vtkFiltersSelectionModule.h

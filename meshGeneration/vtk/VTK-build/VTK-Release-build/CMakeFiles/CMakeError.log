@@ -1,0 +1,1845 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3933135229/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3933135229.dir/build.make CMakeFiles/cmTryCompileExec3933135229.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3933135229.dir/TestEndianess.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3933135229.dir/TestEndianess.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec3933135229
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3933135229.dir/link.txt --verbose=1
+/usr/bin/cc        CMakeFiles/cmTryCompileExec3933135229.dir/TestEndianess.c.o  -o cmTryCompileExec3933135229 -rdynamic 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1872899777/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1872899777.dir/build.make CMakeFiles/cmTryCompileExec1872899777.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1872899777.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1872899777.dir/CheckSymbolExists.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1872899777
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1872899777.dir/link.txt --verbose=1
+/usr/bin/cc        CMakeFiles/cmTryCompileExec1872899777.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1872899777 -rdynamic 
+CMakeFiles/cmTryCompileExec1872899777.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1872899777] Error 1
+make: *** [cmTryCompileExec1872899777/fast] Error 2
+
+File /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec932116304/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec932116304.dir/build.make CMakeFiles/cmTryCompileExec932116304.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec932116304.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec932116304.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec932116304
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec932116304.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec932116304.dir/CheckFunctionExists.c.o  -o cmTryCompileExec932116304 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec932116304] Error 1
+make: *** [cmTryCompileExec932116304/fast] Error 2
+
+
+Determining if the function getsockname exists in the socket failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2221654554/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2221654554.dir/build.make CMakeFiles/cmTryCompileExec2221654554.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2221654554.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTryCompileExec2221654554.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2221654554
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2221654554.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getsockname    CMakeFiles/cmTryCompileExec2221654554.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2221654554 -rdynamic -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2221654554] Error 1
+make: *** [cmTryCompileExec2221654554/fast] Error 2
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec193831860/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec193831860.dir/build.make CMakeFiles/cmTryCompileExec193831860.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec193831860.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS___INT64  -o CMakeFiles/cmTryCompileExec193831860.dir/kwsysPlatformTestsCXX.cxx.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:27:1: error: ‘__int64’ does not name a type
+ __int64 f(__int64 n) { return n; }
+ ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:30:3: error: ‘__int64’ was not declared in this scope
+   __int64 n = 0;
+   ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:30:11: error: expected ‘;’ before ‘n’
+   __int64 n = 0;
+           ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:31:29: error: ‘n’ was not declared in this scope
+   return static_cast<int>(f(n));
+                             ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:31:30: error: ‘f’ was not declared in this scope
+   return static_cast<int>(f(n));
+                              ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec193831860.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make: *** [cmTryCompileExec193831860/fast] Error 2
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3137708764/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3137708764.dir/build.make CMakeFiles/cmTryCompileExec3137708764.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3137708764.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -o CMakeFiles/cmTryCompileExec3137708764.dir/kwsysPlatformTestsCXX.cxx.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:189:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3137708764.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make: *** [cmTryCompileExec3137708764/fast] Error 2
+
+
+Checking whether CXX compiler struct stat has st_mtimespec member failed to compile with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3547224837/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3547224837.dir/build.make CMakeFiles/cmTryCompileExec3547224837.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3547224837.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC  -o CMakeFiles/cmTryCompileExec3547224837.dir/kwsysPlatformTestsCXX.cxx.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:55:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_sec;
+               ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:56:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_nsec;
+               ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3547224837.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make: *** [cmTryCompileExec3547224837/fast] Error 2
+
+
+Checking whether CXX compiler has _atoi64 failed to compile with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1901623178/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1901623178.dir/build.make CMakeFiles/cmTryCompileExec1901623178.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1901623178.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS__ATOI64  -o CMakeFiles/cmTryCompileExec1901623178.dir/kwsysPlatformTestsCXX.cxx.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:245:38: error: ‘_atoi64’ was not declared in this scope
+   return static_cast<int>(_atoi64(str));
+                                      ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1901623178.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make: *** [cmTryCompileExec1901623178/fast] Error 2
+
+
+Determining if the function shl_load exists in the dld;dl failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3521583003/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3521583003.dir/build.make CMakeFiles/cmTryCompileExec3521583003.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3521583003.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTryCompileExec3521583003.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3521583003
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3521583003.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=shl_load    CMakeFiles/cmTryCompileExec3521583003.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3521583003 -rdynamic -ldld -ldl 
+/usr/bin/ld: cannot find -ldld
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3521583003] Error 1
+make: *** [cmTryCompileExec3521583003/fast] Error 2
+
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;ansidecl.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2862449186/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2862449186.dir/build.make CMakeFiles/cmTryCompileExec2862449186.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2862449186.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2862449186.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:25:22: fatal error: ansidecl.h: No such file or directory
+ #include <ansidecl.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2862449186.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2862449186/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <ansidecl.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;dl.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2966525972/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2966525972.dir/build.make CMakeFiles/cmTryCompileExec2966525972.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2966525972.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2966525972.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:16: fatal error: dl.h: No such file or directory
+ #include <dl.h>
+                ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2966525972.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2966525972/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <dl.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;fp_class.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1218761595/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1218761595.dir/build.make CMakeFiles/cmTryCompileExec1218761595.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1218761595.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec1218761595.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:22: fatal error: fp_class.h: No such file or directory
+ #include <fp_class.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1218761595.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec1218761595/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <fp_class.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;ieeefp.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2763046734/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2763046734.dir/build.make CMakeFiles/cmTryCompileExec2763046734.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2763046734.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2763046734.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2763046734.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2763046734/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <ieeefp.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2140638611/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2140638611.dir/build.make CMakeFiles/cmTryCompileExec2140638611.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2140638611.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2140638611.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:17: fatal error: nan.h: No such file or directory
+ #include <nan.h>
+                 ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2140638611.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2140638611/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <nan.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;ndir.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2135974756/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2135974756.dir/build.make CMakeFiles/cmTryCompileExec2135974756.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2135974756.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2135974756.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:18: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+                  ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2135974756.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2135974756/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <ndir.h>
+
+
+int main(){return 0;}
+
+Determining if the fpclass exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3546358346/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3546358346.dir/build.make CMakeFiles/cmTryCompileExec3546358346.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3546358346.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec3546358346.dir/CheckSymbolExists.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function)
+   return ((int*)(&fpclass))[argc];
+                   ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3546358346.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec3546358346/fast] Error 2
+
+File /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fpclass
+  return ((int*)(&fpclass))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fp_class exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4078764703/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4078764703.dir/build.make CMakeFiles/cmTryCompileExec4078764703.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4078764703.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec4078764703.dir/CheckSymbolExists.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function)
+   return ((int*)(&fp_class))[argc];
+                   ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4078764703.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec4078764703/fast] Error 2
+
+File /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fp_class
+  return ((int*)(&fp_class))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _stat exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2765386304/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2765386304.dir/build.make CMakeFiles/cmTryCompileExec2765386304.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2765386304.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2765386304.dir/CheckSymbolExists.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function)
+   return ((int*)(&_stat))[argc];
+                   ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2765386304.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec2765386304/fast] Error 2
+
+File /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stat
+  return ((int*)(&_stat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for DIR in sys/ndir.h failed to compile with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4183729305/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4183729305.dir/build.make CMakeFiles/cmTryCompileExec4183729305.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4183729305.dir/platformTestsC.c.o
+/usr/bin/cc  -DTEST_HAVE_SYS_NDIR_H -w -w    -o CMakeFiles/cmTryCompileExec4183729305.dir/platformTestsC.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/libxml2/vtklibxml2/platformTestsC.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/libxml2/vtklibxml2/platformTestsC.c:82:22: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4183729305.dir/platformTestsC.c.o] Error 1
+make: *** [cmTryCompileExec4183729305/fast] Error 2
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2741807239/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2741807239.dir/build.make CMakeFiles/cmTryCompileExec2741807239.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2741807239.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2741807239.dir/CheckIncludeFile.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2741807239.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2741807239/fast] Error 2
+
+
+Determining size of INT8 failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2371570435/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2371570435.dir/build.make CMakeFiles/cmTryCompileExec2371570435.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2371570435.dir/int8.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2371570435.dir/int8.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int8.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int8.c:17:22: error: ‘INT8’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT8))
+                      ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int8.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2371570435.dir/int8.c.o] Error 1
+make: *** [cmTryCompileExec2371570435/fast] Error 2
+
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT16 failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec154668426/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec154668426.dir/build.make CMakeFiles/cmTryCompileExec154668426.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec154668426.dir/int16.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec154668426.dir/int16.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int16.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int16.c:17:22: error: ‘INT16’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT16))
+                      ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int16.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec154668426.dir/int16.c.o] Error 1
+make: *** [cmTryCompileExec154668426/fast] Error 2
+
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT32 failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3890401685/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3890401685.dir/build.make CMakeFiles/cmTryCompileExec3890401685.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3890401685.dir/int32.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3890401685.dir/int32.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int32.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int32.c:17:22: error: ‘INT32’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT32))
+                      ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int32.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3890401685.dir/int32.c.o] Error 1
+make: *** [cmTryCompileExec3890401685/fast] Error 2
+
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function setmode exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec970171476/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec970171476.dir/build.make CMakeFiles/cmTryCompileExec970171476.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec970171476.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=setmode   -o CMakeFiles/cmTryCompileExec970171476.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec970171476
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec970171476.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=setmode    CMakeFiles/cmTryCompileExec970171476.dir/CheckFunctionExists.c.o  -o cmTryCompileExec970171476 -rdynamic 
+CMakeFiles/cmTryCompileExec970171476.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `setmode'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec970171476] Error 1
+make: *** [cmTryCompileExec970171476/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2124366213/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2124366213.dir/build.make CMakeFiles/cmTryCompileExec2124366213.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2124366213.dir/TestEndianess.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2124366213.dir/TestEndianess.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2124366213
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2124366213.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2124366213.dir/TestEndianess.c.o  -o cmTryCompileExec2124366213 -rdynamic 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3235211329/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3235211329.dir/build.make CMakeFiles/cmTryCompileExec3235211329.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3235211329.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=jbg_newlen   -o CMakeFiles/cmTryCompileExec3235211329.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3235211329
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3235211329.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=jbg_newlen    CMakeFiles/cmTryCompileExec3235211329.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3235211329 -rdynamic 
+CMakeFiles/cmTryCompileExec3235211329.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `jbg_newlen'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3235211329] Error 1
+make: *** [cmTryCompileExec3235211329/fast] Error 2
+
+
+Determining if the function WSAStartup exists in the ws2_32;m;dl failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4209086271/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4209086271.dir/build.make CMakeFiles/cmTryCompileExec4209086271.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4209086271.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTryCompileExec4209086271.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4209086271
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4209086271.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup    CMakeFiles/cmTryCompileExec4209086271.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4209086271 -rdynamic -lws2_32 -lm -ldl 
+/usr/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4209086271] Error 1
+make: *** [cmTryCompileExec4209086271/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the wsock32;m;dl failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1889186782/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1889186782.dir/build.make CMakeFiles/cmTryCompileExec1889186782.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1889186782.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1889186782.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1889186782
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1889186782.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1889186782.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1889186782 -rdynamic -lwsock32 -lm -ldl 
+/usr/bin/ld: cannot find -lwsock32
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1889186782] Error 1
+make: *** [cmTryCompileExec1889186782/fast] Error 2
+
+
+Determining if the function gethostname exists in the ucb;m;dl failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec106466010/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec106466010.dir/build.make CMakeFiles/cmTryCompileExec106466010.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec106466010.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTryCompileExec106466010.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec106466010
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec106466010.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gethostname    CMakeFiles/cmTryCompileExec106466010.dir/CheckFunctionExists.c.o  -o cmTryCompileExec106466010 -rdynamic -lucb -lm -ldl 
+/usr/bin/ld: cannot find -lucb
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec106466010] Error 1
+make: *** [cmTryCompileExec106466010/fast] Error 2
+
+
+Determining if the function connect exists in the socket;m;dl failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2192151369/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2192151369.dir/build.make CMakeFiles/cmTryCompileExec2192151369.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2192151369.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec2192151369.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2192151369
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2192151369.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec2192151369.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2192151369 -rdynamic -lsocket -lm -ldl 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2192151369] Error 1
+make: *** [cmTryCompileExec2192151369/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1604389667/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1604389667.dir/build.make CMakeFiles/cmTryCompileExec1604389667.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1604389667.dir/TestEndianess.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1604389667.dir/TestEndianess.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec1604389667
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1604389667.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w     CMakeFiles/cmTryCompileExec1604389667.dir/TestEndianess.c.o  -o cmTryCompileExec1604389667 -rdynamic 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function clock_gettime exists in the posix4 failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2710624125/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2710624125.dir/build.make CMakeFiles/cmTryCompileExec2710624125.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2710624125.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec2710624125.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2710624125
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2710624125.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTryCompileExec2710624125.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2710624125 -rdynamic -lposix4 -lm -ldl 
+/usr/bin/ld: cannot find -lposix4
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2710624125] Error 1
+make: *** [cmTryCompileExec2710624125/fast] Error 2
+
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;mach/mach_time.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2350640316/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2350640316.dir/build.make CMakeFiles/cmTryCompileExec2350640316.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2350640316.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec2350640316.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:28: fatal error: mach/mach_time.h: No such file or directory
+ #include <mach/mach_time.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2350640316.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2350640316/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <mach/mach_time.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;io.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec674450404/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec674450404.dir/build.make CMakeFiles/cmTryCompileExec674450404.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec674450404.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec674450404.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec674450404.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec674450404/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <io.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;winsock2.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2335330703/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2335330703.dir/build.make CMakeFiles/cmTryCompileExec2335330703.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2335330703.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec2335330703.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:22: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2335330703.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2335330703/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <winsock2.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;globus/common.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4023069290/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4023069290.dir/build.make CMakeFiles/cmTryCompileExec4023069290.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4023069290.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec4023069290.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:27: fatal error: globus/common.h: No such file or directory
+ #include <globus/common.h>
+                           ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4023069290.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec4023069290/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <globus/common.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pdb.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3742908304/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3742908304.dir/build.make CMakeFiles/cmTryCompileExec3742908304.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3742908304.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec3742908304.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:17: fatal error: pdb.h: No such file or directory
+ #include <pdb.h>
+                 ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3742908304.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec3742908304/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pdb.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pthread.h;srbclient.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec771185451/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec771185451.dir/build.make CMakeFiles/cmTryCompileExec771185451.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec771185451.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec771185451.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:16:23: fatal error: srbclient.h: No such file or directory
+ #include <srbclient.h>
+                       ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec771185451.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec771185451/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pthread.h>
+#include <srbclient.h>
+
+
+int main(){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1193508998/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1193508998.dir/build.make CMakeFiles/cmTryCompileExec1193508998.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1193508998.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec1193508998.dir/H5_SIZEOF___INT64.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1193508998.dir/H5_SIZEOF___INT64.c.o] Error 1
+make: *** [cmTryCompileExec1193508998/fast] Error 2
+
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the variable CLOCK_MONOTONIC exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3274370750/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3274370750.dir/build.make CMakeFiles/cmTryCompileExec3274370750.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3274370750.dir/CheckVariableExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC   -o CMakeFiles/cmTryCompileExec3274370750.dir/CheckVariableExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckVariableExists.c
+Linking C executable cmTryCompileExec3274370750
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3274370750.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC    CMakeFiles/cmTryCompileExec3274370750.dir/CheckVariableExists.c.o  -o cmTryCompileExec3274370750 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec3274370750.dir/CheckVariableExists.c.o: In function `main':
+CheckVariableExists.c:(.text+0x25): undefined reference to `CLOCK_MONOTONIC'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3274370750] Error 1
+make: *** [cmTryCompileExec3274370750/fast] Error 2
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4192154777/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4192154777.dir/build.make CMakeFiles/cmTryCompileExec4192154777.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4192154777.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec4192154777.dir/HDF5Tests.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:191:29: error: ‘struct tm’ has no member named ‘__tm_gmtoff’
+ SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+                             ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4192154777.dir/HDF5Tests.c.o] Error 1
+make: *** [cmTryCompileExec4192154777/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1272007939/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1272007939.dir/build.make CMakeFiles/cmTryCompileExec1272007939.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1272007939.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec1272007939.dir/HDF5Tests.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:474:32: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+                                ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1272007939.dir/HDF5Tests.c.o] Error 1
+make: *** [cmTryCompileExec1272007939/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3920834344/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3920834344.dir/build.make CMakeFiles/cmTryCompileExec3920834344.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3920834344.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec3920834344.dir/HDF5Tests.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:480:30: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+                              ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3920834344.dir/HDF5Tests.c.o] Error 1
+make: *** [cmTryCompileExec3920834344/fast] Error 2
+
+Determining if the function _getvideoconfig exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2566866028/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2566866028.dir/build.make CMakeFiles/cmTryCompileExec2566866028.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2566866028.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTryCompileExec2566866028.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2566866028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2566866028.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig    CMakeFiles/cmTryCompileExec2566866028.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2566866028 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec2566866028.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_getvideoconfig'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2566866028] Error 1
+make: *** [cmTryCompileExec2566866028/fast] Error 2
+
+
+Determining if the function gettextinfo exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2816567520/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2816567520.dir/build.make CMakeFiles/cmTryCompileExec2816567520.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2816567520.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTryCompileExec2816567520.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2816567520
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2816567520.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo    CMakeFiles/cmTryCompileExec2816567520.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2816567520 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec2816567520.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `gettextinfo'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2816567520] Error 1
+make: *** [cmTryCompileExec2816567520/fast] Error 2
+
+
+Determining if the function _scrsize exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3995218220/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3995218220.dir/build.make CMakeFiles/cmTryCompileExec3995218220.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3995218220.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTryCompileExec3995218220.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3995218220
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3995218220.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_scrsize    CMakeFiles/cmTryCompileExec3995218220.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3995218220 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec3995218220.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_scrsize'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3995218220] Error 1
+make: *** [cmTryCompileExec3995218220/fast] Error 2
+
+
+Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec616458392/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec616458392.dir/build.make CMakeFiles/cmTryCompileExec616458392.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec616458392.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTryCompileExec616458392.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec616458392
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec616458392.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo    CMakeFiles/cmTryCompileExec616458392.dir/CheckFunctionExists.c.o  -o cmTryCompileExec616458392 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec616458392.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `GetConsoleScreenBufferInfo'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec616458392] Error 1
+make: *** [cmTryCompileExec616458392/fast] Error 2
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec906544969/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec906544969.dir/build.make CMakeFiles/cmTryCompileExec906544969.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec906544969.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTryCompileExec906544969.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec906544969
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec906544969.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo    CMakeFiles/cmTryCompileExec906544969.dir/CheckFunctionExists.c.o  -o cmTryCompileExec906544969 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec906544969.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec906544969] Error 1
+make: *** [cmTryCompileExec906544969/fast] Error 2
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3651655215/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3651655215.dir/build.make CMakeFiles/cmTryCompileExec3651655215.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3651655215.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTryCompileExec3651655215.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3651655215
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3651655215.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp    CMakeFiles/cmTryCompileExec3651655215.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3651655215 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec3651655215.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3651655215] Error 1
+make: *** [cmTryCompileExec3651655215/fast] Error 2
+
+
+Performing CXX Test OLD_HEADER_FILENAME failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec701271027/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec701271027.dir/build.make CMakeFiles/cmTryCompileExec701271027.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec701271027.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec701271027.dir/HDF5CXXTests.cpp.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec701271027
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec701271027.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec701271027.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec701271027 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test H5_NO_NAMESPACE failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec735220614/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec735220614.dir/build.make CMakeFiles/cmTryCompileExec735220614.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec735220614.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec735220614.dir/HDF5CXXTests.cpp.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec735220614
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec735220614.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec735220614.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec735220614 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test H5_NO_STD failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3020018318/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3020018318.dir/build.make CMakeFiles/cmTryCompileExec3020018318.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3020018318.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec3020018318.dir/HDF5CXXTests.cpp.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec3020018318
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3020018318.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec3020018318.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec3020018318 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test BOOL_NOTDEFINED failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3488157985/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3488157985.dir/build.make CMakeFiles/cmTryCompileExec3488157985.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3488157985.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec3488157985.dir/HDF5CXXTests.cpp.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec3488157985
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3488157985.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec3488157985.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec3488157985 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test NO_STATIC_CAST failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec582086050/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec582086050.dir/build.make CMakeFiles/cmTryCompileExec582086050.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec582086050.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec582086050.dir/HDF5CXXTests.cpp.o -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec582086050
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec582086050.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec582086050.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec582086050 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec922062918/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec922062918.dir/build.make CMakeFiles/cmTryCompileExec922062918.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec922062918.dir/ConversionTests.c.o
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTryCompileExec922062918.dir/ConversionTests.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTryCompileExec922062918
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec922062918.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    CMakeFiles/cmTryCompileExec922062918.dir/ConversionTests.c.o  -o cmTryCompileExec922062918 -rdynamic 
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Determining size of uchar failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1468317788/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1468317788.dir/build.make CMakeFiles/cmTryCompileExec1468317788.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1468317788.dir/SIZEOF_UCHAR.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1468317788.dir/SIZEOF_UCHAR.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:17:22: error: ‘uchar’ undeclared here (not in a function)
+ #define SIZE (sizeof(uchar))
+                      ^
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1468317788.dir/SIZEOF_UCHAR.c.o] Error 1
+make: *** [cmTryCompileExec1468317788/fast] Error 2
+
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files jni.h exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2173055326/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2173055326.dir/build.make CMakeFiles/cmTryCompileExec2173055326.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2173055326.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec2173055326.dir/CheckIncludeFiles.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:17: fatal error: jni.h: No such file or directory
+ #include <jni.h>
+                 ^
+compilation terminated.
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2173055326.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2173055326/fast] Error 2
+
+Source:
+/* */
+#include <jni.h>
+
+
+int main(){return 0;}
+
+Determining if the PTHREAD_MUTEX_RECURSIVE exist failed with the following output:
+Change Dir: /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2029047611/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2029047611.dir/build.make CMakeFiles/cmTryCompileExec2029047611.dir/build
+make[1]: Entering directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2029047611.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec2029047611.dir/CheckSymbolExists.c.o   -c /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
+   return ((int*)(&PTHREAD_MUTEX_RECURSIVE))[argc];
+                  ^
+make[1]: Leaving directory `/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2029047611.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec2029047611/fast] Error 2
+
+File /home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PTHREAD_MUTEX_RECURSIVE
+  return ((int*)(&PTHREAD_MUTEX_RECURSIVE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

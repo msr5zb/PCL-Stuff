@@ -1,0 +1,9 @@
+# Target labels
+ vtkIOMovie
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Movie/vtkGenericMovieWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Movie/vtkOggTheoraWriter.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/Movie/vtkIOMovieConfigure.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Movie/vtkGenericMovieWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/IO/Movie/vtkOggTheoraWriter.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/IO/Movie/vtkIOMovieModule.h

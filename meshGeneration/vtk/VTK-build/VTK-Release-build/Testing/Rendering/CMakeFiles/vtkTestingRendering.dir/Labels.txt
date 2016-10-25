@@ -1,0 +1,11 @@
+# Target labels
+ vtkTestingRendering
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkRegressionTestImage.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTesting.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTestingInteractor.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTestingObjectFactory.cxx
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTesting.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTestingInteractor.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/Testing/Rendering/vtkTestingObjectFactory.h
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/Testing/Rendering/vtkTestingRenderingModule.h

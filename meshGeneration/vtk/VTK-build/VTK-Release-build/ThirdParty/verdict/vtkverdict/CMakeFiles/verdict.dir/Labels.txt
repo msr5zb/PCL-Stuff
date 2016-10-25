@@ -1,0 +1,13 @@
+# Target labels
+ vtkverdict
+# Source files and their labels
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_EdgeMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_GaussIntegration.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_HexMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_KnifeMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_PyramidMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_QuadMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_TetMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_TriMetric.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/VerdictVector.cpp
+/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict/vtkverdict/V_WedgeMetric.cpp

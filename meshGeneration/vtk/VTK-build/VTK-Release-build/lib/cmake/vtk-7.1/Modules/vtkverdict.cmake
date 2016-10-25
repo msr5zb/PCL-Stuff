@@ -1,0 +1,10 @@
+set(vtkverdict_LOADED 1)
+set(vtkverdict_DEPENDS "")
+set(vtkverdict_LIBRARIES "verdict")
+set(vtkverdict_INCLUDE_DIRS "/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/ThirdParty/verdict;/home/mike/PCL-Tests/meshGeneration/vtk/VTK/ThirdParty/verdict")
+set(vtkverdict_LIBRARY_DIRS "")
+set(vtkverdict_RUNTIME_LIBRARY_DIRS "/home/mike/PCL-Tests/meshGeneration/vtk/VTK-build/VTK-Release-build/lib")
+set(vtkverdict_WRAP_HIERARCHY_FILE "")
+set(vtkverdict_KIT "")
+set(vtkverdict_EXCLUDE_FROM_WRAPPING 1)
+
